@@ -1,0 +1,17 @@
+{
+  "name": "rocore",
+  "description": "Merge sort with tail calls.",
+  "version": "1.0.0",
+  "keywords": [
+    "sort",
+    "tail call"
+  ],
+  "main": "sort-es5.js",
+  "author": {
+    "name": "Tulayang"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "license": "MIT"
+}
