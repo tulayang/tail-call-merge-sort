@@ -16,9 +16,11 @@ $ babel-node test-sort-es6.js
 ## 文件
 
 * sort-es6.js, test-sort-es6.js 是ESMAScript 6的源码和测试文件
+
   使用 $ babel-node test-sort-es6.js测试代码
 
 * sort-es5.js, test-sort-es5.js 是ESMAScript 5的源码和测试文件
+
   使用 $ node test-sort-es5.js测试代码
 
 ## 二分法
