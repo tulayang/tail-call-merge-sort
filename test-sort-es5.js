@@ -19,29 +19,29 @@ var Sort = _interopRequireWildcard(_import);
 // test(sortf)(array)(cmpf);
 
 function test(sortf) {
-	return function (array) {
-		return function (cmpf) {
-			var start, end, result;
-			start = new Date().getTime();
-			result = sortf(array, cmpf);
-			end = new Date().getTime();
-			console.log('\nFunction: %s(array, f)\nTime: %dms\nArray length: %d\nResult length: %d\nResult:\n%j.\n', sortf.name, end - start, array.length, result.length, result);
-		};
-	};
+    return function (array) {
+        return function (cmpf) {
+            var start, end, result;
+            start = new Date().getTime();
+            result = sortf(array, cmpf);
+            end = new Date().getTime();
+            console.log('\nFunction: %s(array, f)\nTime: %dms\nArray length: %d\nResult length: %d\nResult:\n%j.\n', sortf.name, end - start, array.length, result.length, result);
+        };
+    };
 }
 
 var array = _Fs2['default'].readFileSync(_Path2['default'].join(__dirname, 'data.txt'), 'utf8').split(/\s+/).map(function (c) {
-	return Number(c);
+    return Number(c);
 }).filter(function (c) {
-	return !isNaN(c);
+    return !isNaN(c);
 });
 
 test(Sort.recurMergeSort)(array)(function (x, y) {
-	return x > y;
+    return x > y;
 });
 test(Sort.tailMergeSort)(array)(function (x, y) {
-	return x > y;
+    return x > y;
 });
 test(Sort.tailSelectSort)(array)(function (x, y) {
-	return x > y;
+    return x > y;
 });
