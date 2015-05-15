@@ -11,7 +11,6 @@ $ babel-node test-sort-es6.js
 * 一个普通递归的归并排序函数 recurMergeSort
 * 一个尾递归的归并排序函数 tailMergeSort
 * 一个尾递归的选择排序函数 tailSelectSort
-
 * 已经编译成ESMAScript 5的代码
 
 ## 文件
