@@ -5,7 +5,7 @@ function cmpNumber(array, start, end, f) {
 }
 
 function cmpArray(left, right, f) {
-    return (function cmp(i, j, result, curr) {
+    return (function cmp(i, j, result) {
         return typeof left[i] === 'number'
                ? typeof right[j] === 'number'
                  ? f(left[i], right[j])
